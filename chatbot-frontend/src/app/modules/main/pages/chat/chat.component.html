@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+<p class="text-muted text-center">ESPErancito</p>
+<br>
+<br>
+<div class="chat-container card p-4 shadow-lg border-0">
+    <h1 class="card-title text-center text-success mb-4">
+        Gracias por estar aquí
+    </h1>
+    <h2 class="card-title text-center text-success mb-4">
+        Hazme preguntas acerca de nuestra universidad 🎓
+    </h2>
+    
+    <div class="d-flex">
+        <textarea class="form-control" [(ngModel)]="query" placeholder="   Escribe tu consulta aquí..."></textarea>
+        <button class="btn btn-success btn-lg rounded-pill" (click)="sendQuery()"> Enviar
+        </button>
+        
+    </div>
+    <div *ngIf="response" class="response mt-4">
+        <h3 class="text-info text-center">ESPErancito dice:</h3>
+        <div class="response-box p-3 mt-2 rounded shadow-sm bg-light">
+            <p class="mb-0">{{ response }}</p>
+        </div>
+    </div>
+</div>

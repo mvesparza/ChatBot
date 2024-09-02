@@ -1,0 +1,77 @@
+// variables.scss
+$primary-color: #007bff;
+$success-color: #28a745;
+$info-color: #17a2b8;
+$light-bg: #f8f9fa;
+$shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+
+// styles.scss
+.text-muted {
+    color: #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-info {
+    color: $info-color;
+}
+
+.card {
+    border-radius: .25rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card {
+    &.p-4 {
+        padding: 1.5rem;
+    }
+    &.shadow-lg {
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+    }
+    &.border-0 {
+        border: none;
+    }
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+textarea.form-control {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+button.btn {
+    &.btn-success {
+        background-color: $success-color;
+        border-color: $success-color;
+        color: #fff;
+    }
+    &.btn-lg {
+        font-size: 1.25rem;
+        padding: .75rem 1.25rem;
+    }
+    &.rounded-pill {
+        border-radius: 50rem;
+    }
+}
+
+.response {
+    .response-box {
+        background-color: $light-bg;
+        box-shadow: $shadow-sm;
+        border-radius: .25rem;
+    }
+}
+
